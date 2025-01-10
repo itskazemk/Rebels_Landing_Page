@@ -26,20 +26,20 @@ interface RouteProps {
 const routeList: RouteProps[] = [
   {
     href: "#features",
-    label: "Features",
+    label: "پروژه‌ها",
   },
   {
     href: "#testimonials",
-    label: "Testimonials",
+    label: "درباره ما",
   },
   {
     href: "#pricing",
-    label: "Pricing",
+    label: "تماس با ما",
   },
-  {
-    href: "#faq",
-    label: "FAQ",
-  },
+  // {
+  //   href: "#faq",
+  //   label: "FAQ",
+  // },
 ];
 
 export const Navbar = () => {
@@ -54,8 +54,7 @@ export const Navbar = () => {
               href="/"
               className="ml-2 font-bold text-xl flex"
             >
-              <LogoIcon />
-              ShadcnUI/React
+              Team Rebels
             </a>
           </NavigationMenuItem>
 
@@ -63,10 +62,7 @@ export const Navbar = () => {
           <span className="flex md:hidden">
             <ModeToggle />
 
-            <Sheet
-              open={isOpen}
-              onOpenChange={setIsOpen}
-            >
+            <Sheet open={isOpen} onOpenChange={setIsOpen}>
               <SheetTrigger className="px-2">
                 <Menu
                   className="flex md:hidden h-5 w-5"
@@ -79,7 +75,7 @@ export const Navbar = () => {
               <SheetContent side={"left"}>
                 <SheetHeader>
                   <SheetTitle className="font-bold text-xl">
-                    Shadcn/React
+                    Team Rebels
                   </SheetTitle>
                 </SheetHeader>
                 <nav className="flex flex-col justify-center items-center gap-2 mt-4">
@@ -126,7 +122,7 @@ export const Navbar = () => {
             ))}
           </nav>
 
-          <div className="hidden md:flex gap-2">
+          {/* <div className="hidden md:flex gap-2">
             <a
               rel="noreferrer noopener"
               href="https://github.com/leoMirandaa/shadcn-landing-page.git"
@@ -138,7 +134,7 @@ export const Navbar = () => {
             </a>
 
             <ModeToggle />
-          </div>
+          </div> */}
         </NavigationMenuList>
       </NavigationMenu>
     </header>

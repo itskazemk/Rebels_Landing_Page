@@ -17,7 +17,7 @@ export const HeroCards = () => {
   return (
     <div className="hidden lg:flex flex-row flex-wrap gap-8 relative w-[700px] h-[500px]">
       {/* Testimonial */}
-      <Card className="absolute w-[340px] -top-[15px] drop-shadow-xl shadow-black/10 dark:shadow-white/10">
+      {/* <Card className="absolute w-[340px] -top-[15px] drop-shadow-xl shadow-black/10 dark:shadow-white/10">
         <CardHeader className="flex flex-row items-center gap-4 pb-2">
           <Avatar>
             <AvatarImage
@@ -34,7 +34,7 @@ export const HeroCards = () => {
         </CardHeader>
 
         <CardContent>This landing page is awesome!</CardContent>
-      </Card>
+      </Card> */}
 
       {/* Team */}
       <Card className="absolute right-[20px] top-4 w-80 flex flex-col justify-center items-center drop-shadow-xl shadow-black/10 dark:shadow-white/10">
@@ -113,10 +113,7 @@ export const HeroCards = () => {
         <CardHeader>
           <CardTitle className="flex item-center justify-between">
             Free
-            <Badge
-              variant="secondary"
-              className="text-sm text-primary"
-            >
+            <Badge variant="secondary" className="text-sm text-primary">
               Most popular
             </Badge>
           </CardTitle>
@@ -140,10 +137,7 @@ export const HeroCards = () => {
           <div className="space-y-4">
             {["4 Team member", "4 GB Storage", "Upto 6 pages"].map(
               (benefit: string) => (
-                <span
-                  key={benefit}
-                  className="flex"
-                >
+                <span key={benefit} className="flex">
                   <Check className="text-green-500" />{" "}
                   <h3 className="ml-2">{benefit}</h3>
                 </span>
