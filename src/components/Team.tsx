@@ -7,12 +7,13 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Facebook, Instagram, Linkedin } from "lucide-react";
+import { Github, Instagram, Linkedin } from "lucide-react";
 
 interface TeamProps {
   imageUrl: string;
   name: string;
   position: string;
+  description: string;
   socialNetworks: SociaNetworkslProps[];
 }
 
@@ -24,15 +25,16 @@ interface SociaNetworkslProps {
 const teamList: TeamProps[] = [
   {
     imageUrl: "https://i.pravatar.cc/150?img=35",
-    name: "Emma Smith",
-    position: "Product Manager",
+    name: "عباس یاور",
+    position: "FullStack Developer",
+    description: "دانشجوی کارشناسی ارشد هوش مصنوعی دانشگاه یزد",
     socialNetworks: [
       {
         name: "Linkedin",
         url: "https://www.linkedin.com/in/leopoldo-miranda/",
       },
       {
-        name: "Facebook",
+        name: "Github",
         url: "https://www.facebook.com/",
       },
       {
@@ -42,16 +44,17 @@ const teamList: TeamProps[] = [
     ],
   },
   {
-    imageUrl: "https://i.pravatar.cc/150?img=60",
-    name: "John Doe",
-    position: "Tech Lead",
+    imageUrl: "images/kazem.png",
+    name: "کاظم کمالی",
+    position: "FullStack Developer",
+    description: "مهندس برق و آچار فرانسه تیم",
     socialNetworks: [
       {
         name: "Linkedin",
         url: "https://www.linkedin.com/in/leopoldo-miranda/",
       },
       {
-        name: "Facebook",
+        name: "Github",
         url: "https://www.facebook.com/",
       },
       {
@@ -62,32 +65,21 @@ const teamList: TeamProps[] = [
   },
   {
     imageUrl: "https://i.pravatar.cc/150?img=36",
-    name: "Ashley Ross",
-    position: "Frontend Developer",
+    name: "امین حلوایی",
+    position: "Backend Developer",
+    description: "دانشجوی کارشناسی ارشد نرم‌افزار در دانشگاه شریف",
     socialNetworks: [
       {
         name: "Linkedin",
         url: "https://www.linkedin.com/in/leopoldo-miranda/",
       },
-
+      {
+        name: "Github",
+        url: "https://www.facebook.com/",
+      },
       {
         name: "Instagram",
         url: "https://www.instagram.com/",
-      },
-    ],
-  },
-  {
-    imageUrl: "https://i.pravatar.cc/150?img=17",
-    name: "Bruce Rogers",
-    position: "Backend Developer",
-    socialNetworks: [
-      {
-        name: "Linkedin",
-        url: "https://www.linkedin.com/in/leopoldo-miranda/",
-      },
-      {
-        name: "Facebook",
-        url: "https://www.facebook.com/",
       },
     ],
   },
@@ -99,8 +91,8 @@ export const Team = () => {
       case "Linkedin":
         return <Linkedin size="20" />;
 
-      case "Facebook":
-        return <Facebook size="20" />;
+      case "Github":
+        return <Github size="20" />;
 
       case "Instagram":
         return <Instagram size="20" />;
@@ -108,25 +100,25 @@ export const Team = () => {
   };
 
   return (
-    <section
-      id="team"
-      className="container py-24 sm:py-32"
-    >
+    <section id="team" className="container py-24 sm:py-32">
       <h2 className="text-3xl md:text-4xl font-bold">
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-          Our Dedicated{" "}
+          تیم ما{" "}
         </span>
-        Crew
+        (REBELS)
       </h2>
 
-      <p className="mt-4 mb-10 text-xl text-muted-foreground">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis
-        dolor pariatur sit!
-      </p>
+      <p className="mt-4 mb-10 text-xl text-muted-foreground"></p>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 gap-y-10">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 gap-y-10">
         {teamList.map(
-          ({ imageUrl, name, position, socialNetworks }: TeamProps) => (
+          ({
+            imageUrl,
+            name,
+            position,
+            socialNetworks,
+            description,
+          }: TeamProps) => (
             <Card
               key={name}
               className="bg-muted/50 relative mt-8 flex flex-col justify-center items-center"
@@ -144,7 +136,7 @@ export const Team = () => {
               </CardHeader>
 
               <CardContent className="text-center pb-2">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p>{description}</p>
               </CardContent>
 
               <CardFooter>
