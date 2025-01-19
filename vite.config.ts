@@ -11,4 +11,5 @@ export default defineConfig({
       "@": projectRoot,
     },
   },
+  base: "/Rebels_Landing_Page",
 });
