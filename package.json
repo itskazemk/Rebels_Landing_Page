@@ -1,7 +1,6 @@
 {
   "name": "shadcn-landing-page-template",
   "description": "Landing page template utilizing Shadcn, React, Typescript, and Tailwind CSS for rapid development and responsive design.",
-  "homepage": "https://itskazemk.github.io/Rebels_Landing_Page/",
 
   "license": "MIT",
   "keywords": [
