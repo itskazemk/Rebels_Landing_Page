@@ -24,7 +24,7 @@ interface SociaNetworkslProps {
 
 const teamList: TeamProps[] = [
   {
-    imageUrl: "https://i.pravatar.cc/150?img=35",
+    imageUrl: "images/abas2.jpg",
     name: "عباس یاور",
     position: "FullStack Developer",
     description: "دانشجوی کارشناسی ارشد هوش مصنوعی دانشگاه یزد",
@@ -64,7 +64,7 @@ const teamList: TeamProps[] = [
     ],
   },
   {
-    imageUrl: "https://i.pravatar.cc/150?img=36",
+    imageUrl: "images/amin.jpg",
     name: "امین حلوایی",
     position: "Backend Developer",
     description: "دانشجوی کارشناسی ارشد نرم‌افزار در دانشگاه شریف",
