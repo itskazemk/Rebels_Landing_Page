@@ -1,11 +1,15 @@
 import { useState } from "react";
 
 export function Carousel() {
-  const [image, setImage] = useState();
+  const [num, setNum] = useState(0);
 
-  function nextFn() {}
+  function nextFn() {
+    setNum((item) => item + 1);
+  }
 
-  function prevFn() {}
+  function prevFn() {
+    setNum((item) => item - 1);
+  }
 
   return (
     <div
@@ -16,7 +20,10 @@ export function Carousel() {
       {/* <!-- Carousel wrapper --> */}
       <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
         {/* <!-- Item 1 --> */}
-        <div className="hidden duration-700 ease-in-out" data-carousel-item>
+        <div
+          className={`${num == 0 ? "" : "hidden "} duration-700 ease-in-out`}
+          data-carousel-item
+        >
           <img
             src="images/concert/2-Buy_ticket.jpeg"
             className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
@@ -24,15 +31,21 @@ export function Carousel() {
           />
         </div>
         {/* <!-- Item 2 --> */}
-        <div className="hidden duration-700 ease-in-out" data-carousel-item>
+        <div
+          className={`${num == 1 ? "" : "hidden "} duration-700 ease-in-out`}
+          data-carousel-item
+        >
           <img
-            src="images/concert/2-Buy_ticket.jpeg"
+            src="images/concert/3-Panel.jpeg"
             className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
             alt="..."
           />
         </div>
         {/* <!-- Item 3 --> */}
-        <div className="hidden duration-700 ease-in-out" data-carousel-item>
+        <div
+          className={`${num == 0 ? "" : "hidden "} duration-700 ease-in-out`}
+          data-carousel-item
+        >
           <img
             src="images/concert/2-Buy_ticket.jpeg"
             className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
@@ -40,7 +53,10 @@ export function Carousel() {
           />
         </div>
         {/* <!-- Item 4 --> */}
-        <div className="hidden duration-700 ease-in-out" data-carousel-item>
+        <div
+          className={`${num == 2 ? "" : "hidden "} duration-700 ease-in-out`}
+          data-carousel-item
+        >
           <img
             src="images/concert/2-Buy_ticket.jpeg"
             className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
@@ -48,7 +64,10 @@ export function Carousel() {
           />
         </div>
         {/* <!-- Item 5 --> */}
-        <div className="hidden duration-700 ease-in-out" data-carousel-item>
+        <div
+          className={`${num == 3 ? "" : "hidden "} duration-700 ease-in-out`}
+          data-carousel-item
+        >
           <img
             src="images/concert/2-Buy_ticket.jpeg"
             className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
