@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 /* *=========== Default theme =========== */
 /* @layer base {
   :root {
@@ -123,3 +124,5 @@
     @apply bg-background text-foreground;
   }
 }
+
+

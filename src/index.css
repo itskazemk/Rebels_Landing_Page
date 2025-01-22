@@ -2,6 +2,11 @@ html {
   scroll-behavior: smooth;
 }
 
+* {
+  font-family: VazirMatn !important;
+}
+
+
 /* HeroCards background shadow */
 .shadow {
   position: absolute;
