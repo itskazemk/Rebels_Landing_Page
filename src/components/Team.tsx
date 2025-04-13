@@ -31,35 +31,35 @@ const teamList: TeamProps[] = [
     socialNetworks: [
       {
         name: "Linkedin",
-        url: "https://www.linkedin.com/in/leopoldo-miranda/",
+        url: "https://www.linkedin.com/in/abbas-yavar-aa3725248",
       },
       {
         name: "Github",
-        url: "https://www.facebook.com/",
+        url: "https://github.com/Mr-Yavar",
       },
       {
         name: "Instagram",
-        url: "https://www.instagram.com/",
+        url: "https://www.instagram.com/sir_yavar",
       },
     ],
   },
   {
     imageUrl: "images/kazem.png",
     name: "کاظم کمالی",
-    position: "FullStack Developer",
+    position: "FrontEnd Developer",
     description: "مهندس برق و آچار فرانسه تیم",
     socialNetworks: [
       {
         name: "Linkedin",
-        url: "https://www.linkedin.com/in/leopoldo-miranda/",
+        url: "https://www.linkedin.com/in/kazem-kamali/",
       },
       {
         name: "Github",
-        url: "https://www.facebook.com/",
+        url: "https://github.com/itskazemk",
       },
       {
         name: "Instagram",
-        url: "https://www.instagram.com/",
+        url: "https://www.instagram.com/thisis_kazem",
       },
     ],
   },
@@ -71,15 +71,15 @@ const teamList: TeamProps[] = [
     socialNetworks: [
       {
         name: "Linkedin",
-        url: "https://www.linkedin.com/in/leopoldo-miranda/",
+        url: "https://www.linkedin.com/in/amin-halvaei/",
       },
       {
         name: "Github",
-        url: "https://www.facebook.com/",
+        url: "https://github.com/aminhalvaei",
       },
       {
         name: "Instagram",
-        url: "https://www.instagram.com/",
+        url: "https://www.instagram.com/aminhalvaei",
       },
     ],
   },
@@ -96,6 +96,7 @@ export const Team = () => {
 
       case "Instagram":
         return <Instagram size="20" />;
+
     }
   };
 

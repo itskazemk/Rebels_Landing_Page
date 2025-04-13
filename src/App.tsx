@@ -1,6 +1,5 @@
 import "./App.css";
 import { Cta } from "./components/Cta";
-import { Features } from "./components/Features";
 import { Hero } from "./components/Hero";
 import { Navbar } from "./components/Navbar";
 import { ScrollToTop } from "./components/ScrollToTop";
@@ -16,7 +15,7 @@ function App() {
       {/* <Sponsors /> */}
       {/* <About /> */}
       {/* <HowItWorks /> */}
-      <Features />
+      {/* <Features /> */}
       {/* <Services /> */}
       {/* <Testimonials /> */}
       <Team />

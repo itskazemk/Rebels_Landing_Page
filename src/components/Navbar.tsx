@@ -1,22 +1,21 @@
-import { useState } from "react";
 import {
-  NavigationMenu,
-  NavigationMenuItem,
-  NavigationMenuList,
+    NavigationMenu,
+    NavigationMenuItem,
+    NavigationMenuList,
 } from "@/components/ui/navigation-menu";
 import {
-  Sheet,
-  SheetContent,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
+    Sheet,
+    SheetContent,
+    SheetHeader,
+    SheetTitle,
+    SheetTrigger,
 } from "@/components/ui/sheet";
+import { useState } from "react";
 
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
-import { buttonVariants } from "./ui/button";
 import { Menu } from "lucide-react";
 import { ModeToggle } from "./mode-toggle";
-import { LogoIcon } from "./Icons";
+import { buttonVariants } from "./ui/button";
 
 interface RouteProps {
   href: string;
@@ -24,16 +23,13 @@ interface RouteProps {
 }
 
 const routeList: RouteProps[] = [
+
   {
-    href: "#features",
-    label: "پروژه‌ها",
+    href: "#team",
+    label: "تیم ما",
   },
   {
-    href: "#testimonials",
-    label: "درباره ما",
-  },
-  {
-    href: "#pricing",
+    href: "mailto:absyavar@gmail.com",
     label: "تماس با ما",
   },
   // {
@@ -54,7 +50,7 @@ export const Navbar = () => {
               href="/"
               className="ml-2 font-bold text-xl flex"
             >
-              Team Rebels
+              ByteStack Team
             </a>
           </NavigationMenuItem>
 
@@ -75,7 +71,7 @@ export const Navbar = () => {
               <SheetContent side={"left"}>
                 <SheetHeader>
                   <SheetTitle className="font-bold text-xl">
-                    Team Rebels
+                    ByteStack Team
                   </SheetTitle>
                 </SheetHeader>
                 <nav className="flex flex-col justify-center items-center gap-2 mt-4">
@@ -92,7 +88,7 @@ export const Navbar = () => {
                   ))}
                   <a
                     rel="noreferrer noopener"
-                    href="https://github.com/leoMirandaa/shadcn-landing-page.git"
+                    href="https://github.com/"
                     target="_blank"
                     className={`w-[110px] border ${buttonVariants({
                       variant: "secondary",
