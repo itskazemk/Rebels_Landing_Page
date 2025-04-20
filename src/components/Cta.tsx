@@ -7,7 +7,7 @@ export const Cta = () => {
         <div className="lg:col-start-1">
           <h2 className="text-3xl font-bold md:text-4xl ">
             درخواست دمو
-            <span className="text-transparent bg-gradient-to-b from-primary/60 to-primary bg-clip-text">
+            <span className="text-transparent bg-linear-to-b from-primary/60 to-primary bg-clip-text">
               {" "}
               /{" "}
             </span>

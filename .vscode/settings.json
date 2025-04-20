@@ -2,9 +2,6 @@
   "files.associations": {
     "*.css": "tailwindcss"
   },
-  "workbench.colorCustomizations": {
-    "titleBar.activeBackground": "#ca580c" // Change this color!
-  },
   "cSpell.language": "en,fa,fa-IR",
   // "window.title": "Production-Front${separator}${activeEditorShort}",
   // "editor.defaultFormatter": "esbenp.prettier-vscode",
