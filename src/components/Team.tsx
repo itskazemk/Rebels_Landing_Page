@@ -1,4 +1,3 @@
-import { buttonVariants } from "@/components/ui/button";
 import {
   Card,
   CardContent,
@@ -96,7 +95,6 @@ export const Team = () => {
 
       case "Instagram":
         return <Instagram size="20" />;
-
     }
   };
 
@@ -141,20 +139,16 @@ export const Team = () => {
 
               <CardFooter>
                 {socialNetworks.map(({ name, url }: SociaNetworkslProps) => (
-                  <div key={name}>
-                    <a
-                      rel="noreferrer noopener"
-                      href={url}
-                      target="_blank"
-                      className={buttonVariants({
-                        variant: "ghost",
-                        size: "sm",
-                      })}
-                    >
-                      <span className="sr-only">{name} icon</span>
-                      {socialIcon(name)}
-                    </a>
-                  </div>
+                  <a
+                    key={name}
+                    rel="noreferrer noopener"
+                    href={url}
+                    target="_blank"
+                    className="p-3 hover:bg-base-100 rounded-2xl"
+                  >
+                    <span className="sr-only">{name} icon</span>
+                    {socialIcon(name)}
+                  </a>
                 ))}
               </CardFooter>
             </Card>

@@ -4,14 +4,14 @@ import { Hero } from "./components/Hero";
 import { Navbar } from "./components/Navbar";
 import { ScrollToTop } from "./components/ScrollToTop";
 import { Team } from "./components/Team";
-import { Carousel } from "./components/ui/Carousel";
+import { Samples } from "./components/ui/samples";
 
 function App() {
   return (
     <>
       <Navbar />
       <Hero />
-      <Carousel />
+      <Samples />
       {/* <Sponsors /> */}
       {/* <About /> */}
       {/* <HowItWorks /> */}
