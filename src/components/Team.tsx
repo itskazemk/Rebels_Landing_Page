@@ -119,7 +119,7 @@ export const Team = () => {
           }: TeamProps) => (
             <Card
               key={name}
-              className="bg-muted/50 relative mt-8 flex flex-col justify-center items-center"
+              className="bg-base-100 relative mt-8 flex flex-col justify-center items-center"
             >
               <CardHeader className="mt-8 flex justify-center items-center pb-2">
                 <img
@@ -144,7 +144,7 @@ export const Team = () => {
                     rel="noreferrer noopener"
                     href={url}
                     target="_blank"
-                    className="p-3 hover:bg-base-100 rounded-2xl"
+                    className="p-3 hover:bg-base-300 rounded-2xl"
                   >
                     <span className="sr-only">{name} icon</span>
                     {socialIcon(name)}

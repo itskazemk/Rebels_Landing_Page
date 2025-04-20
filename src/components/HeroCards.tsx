@@ -103,29 +103,28 @@ export const HeroCards = () => {
       {/* Pricing */}
       <Card className="absolute top-[150px] left-[50px] w-72  drop-shadow-xl shadow-black/10 dark:shadow-white/10">
         <CardHeader>
-          <CardTitle className="flex item-center justify-between">
-           
-          </CardTitle>
+          <CardTitle className="flex item-center justify-between"></CardTitle>
         </CardHeader>
 
         <CardContent>
-        <a href='mailto:absyavar@gmail.com'>  <Button className="w-full" >تماس با ما</Button></a>
+          <a href="mailto:absyavar@gmail.com">
+            {" "}
+            <Button className="w-full">تماس با ما</Button>
+          </a>
         </CardContent>
 
         <hr className="w-4/5 m-auto mb-4" />
 
         <CardFooter className="flex">
           <div className="space-y-4">
-            {[
-              "بهترین قیمت",
-   
-              "طراحی و توسعه مطابق نیاز",
-            ].map((benefit: string) => (
-              <span key={benefit} className="flex">
-                <Check className="text-green-500" />{" "}
-                <h3 className="ml-2">{benefit}</h3>
-              </span>
-            ))}
+            {["بهترین قیمت", "طراحی و توسعه مطابق نیاز"].map(
+              (benefit: string) => (
+                <span key={benefit} className="flex">
+                  <Check className="text-green-500" />{" "}
+                  <h3 className="ml-2">{benefit}</h3>
+                </span>
+              )
+            )}
           </div>
         </CardFooter>
       </Card>
