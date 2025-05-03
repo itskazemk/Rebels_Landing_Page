@@ -1,11 +1,11 @@
+import tailwindcss from '@tailwindcss/vite';
 import react from "@vitejs/plugin-react-swc";
 import { defineConfig } from "vite";
-
 const projectRoot = new URL("./src", import.meta.url).pathname;
 console.log("-------projectRoot-------", projectRoot);
 
 export default defineConfig({
-  plugins: [react()],
+  plugins: [react(),tailwindcss()],
   resolve: {
     alias: {
       "@": projectRoot,

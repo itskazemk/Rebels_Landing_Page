@@ -23,9 +23,14 @@ interface RouteProps {
 }
 
 const routeList: RouteProps[] = [
+ 
   {
     href: "#team",
     label: "تیم ما",
+  },
+  {
+    href: "#projects",
+    label: "پروژه ها",
   },
   {
     href: "mailto:absyavar@gmail.com",

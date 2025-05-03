@@ -1,17 +1,16 @@
 import "./App.css";
-import { Cta } from "./components/Cta";
 import { Hero } from "./components/Hero";
 import { Navbar } from "./components/Navbar";
 import { ScrollToTop } from "./components/ScrollToTop";
 import { Team } from "./components/Team";
-import { Samples } from "./components/ui/samples";
+import { Projects } from "./components/ui/Projects";
 
 function App() {
   return (
     <>
       <Navbar />
       <Hero />
-      <Samples />
+      <Projects />
       {/* <Sponsors /> */}
       {/* <About /> */}
       {/* <HowItWorks /> */}
@@ -19,7 +18,7 @@ function App() {
       {/* <Services /> */}
       {/* <Testimonials /> */}
       <Team />
-      <Cta />
+      {/* <Cta /> */}
       {/* <Pricing /> */}
       {/* <Newsletter /> */}
       {/* <FAQ /> */}
