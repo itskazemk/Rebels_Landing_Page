@@ -45,7 +45,7 @@ const routeList: RouteProps[] = [
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   return (
-    <header className="sticky border-b-[1px] top-0 z-40 w-full bg-base-200">
+    <header className="sticky border-b-[1px] top-0 z-40 w-full dark:bg-black bg-white">
       <NavigationMenu className="mx-auto">
         <NavigationMenuList className="container h-14 px-4 w-screen flex justify-between ">
           <NavigationMenuItem className="font-bold flex">
@@ -120,21 +120,10 @@ export const Navbar = () => {
                 {route.label}
               </a>
             ))}
+             <ModeToggle />
           </nav>
 
-          {/* <div className="hidden md:flex gap-2">
-            <a
-              rel="noreferrer noopener"
-              href="https://github.com/leoMirandaa/shadcn-landing-page.git"
-              target="_blank"
-              className={`border ${buttonVariants({ variant: "secondary" })}`}
-            >
-              <GitHubLogoIcon className="mr-2 w-5 h-5" />
-              Github
-            </a>
-
-            <ModeToggle />
-          </div> */}
+      
         </NavigationMenuList>
       </NavigationMenu>
     </header>

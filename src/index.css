@@ -1,11 +1,7 @@
 html {
   scroll-behavior: smooth;
+  font-family: '';
 }
-
-* {
-  font-family: VazirMatn !important;
-}
-
 
 /* HeroCards background shadow */
 .shadow {

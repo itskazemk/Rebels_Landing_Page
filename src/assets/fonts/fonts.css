@@ -36,6 +36,7 @@
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
+  font-feature-settings: "ss01";
 }
 
 /* roboto-100 - latin */
@@ -43,6 +44,7 @@
   font-family: "Roboto";
   font-style: normal;
   font-weight: 100;
+
   src:
     local(""),
     url("@/assets/fonts/Roboto/roboto-v30-latin-100.woff2") format("woff2"),
